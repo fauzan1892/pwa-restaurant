@@ -1,0 +1,231 @@
+/* Mobile */
+@media only screen and (max-width: 670px) {
+
+  html,body{
+    overflow-x:hidden;
+  }
+
+  .container{
+    margin-left: 1pc;
+    margin-right: 1pc;
+  }
+
+  .container-fluid{
+    margin-left : 0.5pc;
+    margin-right: 0.5pc;
+  }
+
+  #img-blog{
+    height: 100%;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .topnav {
+    width: 100%;
+    padding: 24px 0 24px;
+    display: block;
+  }
+
+  .topnav .nav-home{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14pt;
+  }
+
+  .topnav ul{
+    display: none;
+  }
+
+  .topnav.responsive ul {
+    margin-top:14px;
+    list-style: none;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: 1.3pc;
+  }
+
+  .topnav.responsive ul li {
+    padding:10px;
+    width: 100%;
+  }
+
+  .topnav.responsive ul li a {
+    padding: 15px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-6{
+    flex: 0 1 calc(100% - 5px);
+    margin-bottom: 2px;
+    padding:0px;
+    clear: both;
+    margin-top: 1pc;
+  }
+
+  .col-4{
+    flex: 0 1 calc(100% - 5px);
+    margin-bottom: 2px;
+    padding:0px;
+    clear: both;
+    margin-top: 1pc;
+  }
+
+  .col-3{
+    flex: 0 1 calc(100% - 5px);
+    margin-bottom: 2px;
+    padding:0px;
+    clear: both;
+    margin-top: 1pc;
+  }
+
+  .hero-banner{
+    background: url('../public/hero-image/hero-image_4-small.jpg') fixed no-repeat center; 
+    background-size: cover;
+    color:#fff;
+    width: 100%;
+  }
+
+  .hero-cover{
+    color:#fff;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .hero-text{
+    margin:2pc 0 3pc 0;
+  }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 671px) and (max-width: 960px) {
+  html,body{
+    overflow-x:hidden;
+    max-width: 100%;
+  }
+
+  .container{
+    margin-left: 1pc;
+    margin-right: 1pc;
+  }
+
+  .container-fluid{
+    margin-left : 0.5pc;
+    margin-right: 0.5pc;
+  }
+
+  #img-blog{
+    height: 100%;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .topnav {
+    width: 100%;
+    padding: 24px 0 24px;
+    display: block;
+  }
+
+  .topnav .nav-home{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14pt;
+  }
+
+  .topnav ul{
+    display: none;
+  }
+
+  .topnav.responsive ul {
+    margin-top:14px;
+    list-style: none;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: 1.3pc;
+  }
+
+  .topnav.responsive ul li {
+    padding:10px;
+    width: 100%;
+  }
+
+  .topnav.responsive ul li a {
+    padding: 15px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-6{
+    flex: 0 1 calc(48% - 5px);
+    margin-bottom: 2px;
+    padding:0px;
+    clear: both;
+    margin-top: 1pc;
+  }
+
+  .col-4{
+    flex: 0 1 calc(50% - 5px);
+    margin-bottom: 2px;
+    padding:0px;
+    clear: both;
+    margin-top: 1pc;
+  }
+
+  .col-3{
+    flex: 0 1 calc(48% - 5px);
+    margin-bottom: 2px;
+    padding:0px;
+    clear: both;
+    margin-top: 1pc;
+  }
+
+  .hero-banner{
+    background: url('../public/hero-image/hero-image_4-small.jpg') fixed no-repeat center; 
+    background-size: cover;
+    color:#fff;
+    width: 100%;
+  }
+
+  .hero-cover{
+    color:#fff;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .hero-text{
+    margin:2pc 0 2pc 0;
+  }
+}
+
+/* Desktop  */
+@media only screen and (min-width: 961px) {
+
+}
