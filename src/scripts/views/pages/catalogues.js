@@ -1,9 +1,10 @@
 import TheRestaurantCatalogueDbSource from '../../data/thecataloguedb-source';
-import { createRestaurantsItemTemplate } from '../templates/template-creator';
+import { createRestaurantsItemTemplate, createLoadingTemplate } from '../templates/template-creator';
 
 const Catalogues = {
   async render() {
-    return `
+    const html = `
+          ${document.querySelector('main').innerHTML = createLoadingTemplate.show()}
           <!-- hero banner-->
             <div class="hero-banner">
               <div class="hero-cover">
@@ -31,6 +32,7 @@ const Catalogues = {
             </div>
           </div>
       `;
+    return html;
   },
 
   async afterRender() {
@@ -41,6 +43,7 @@ const Catalogues = {
     restaurants.forEach((restaurant) => {
       restaurantsContainer.innerHTML += createRestaurantsItemTemplate(restaurant);
     });
+    createLoadingTemplate.remove();
   },
 };
 

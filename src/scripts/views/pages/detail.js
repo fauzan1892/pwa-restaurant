@@ -1,11 +1,12 @@
 import UrlParser from '../../routes/url-parser';
 import TheRestaurantCatalogueDbSource from '../../data/thecataloguedb-source';
-import { createRestaurantsDetailTemplate } from '../templates/template-creator';
+import { createRestaurantsDetailTemplate, createLoadingTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
-    return `
+    const html = `
+          ${document.querySelector('main').innerHTML = createLoadingTemplate.show()}
           <div class="details">
             <div class="container">
               <div id="restaurant"></div>
@@ -13,6 +14,7 @@ const Detail = {
             </div>
           </div>
         `;
+    return html;
   },
 
   async afterRender() {
@@ -32,6 +34,7 @@ const Detail = {
         rating: restaurant.rating,
       },
     });
+    createLoadingTemplate.remove();
   },
 };
 

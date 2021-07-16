@@ -1,9 +1,10 @@
 import FavoriteRestaurantIdb from '../../data/favoriterestaurant-idb';
-import { createRestaurantsItemTemplate } from '../templates/template-creator';
+import { createRestaurantsItemTemplate, createLoadingTemplate } from '../templates/template-creator';
 
 const Like = {
   async render() {
-    return `
+    const html = `
+        ${document.querySelector('main').innerHTML = createLoadingTemplate.show()}
         <div class="explore">
           <div class="container" style="padding-top:6pc;">
             <h2 class="text-center" id="explore">Favorite Restaurant</h2>
@@ -13,6 +14,7 @@ const Like = {
           </div>
         </div>
         `;
+    return html;
   },
 
   async afterRender() {
@@ -27,6 +29,7 @@ const Like = {
         <p>Favorite restaurant still empty</p>
     </div>`;
     }
+    createLoadingTemplate.remove();
   },
 };
 

@@ -1,5 +1,20 @@
 import CONFIG from '../../globals/config';
 
+const createLoadingTemplate = {
+  show() {
+    return `
+    <div class="loader">
+      <div class="loader-content">
+        <img src="https://media.tenor.com/images/fa0ec03ae22382f9c1a188bfc8e1fe8f/tenor.gif" alt="Loader" class="loader-loader" />
+      </div>
+    </div>
+    `;
+  },
+  remove() {
+    document.querySelector('.loader').remove();
+  },
+};
+
 const createRestaurantsItemTemplate = (restaurant) => `
     <div class="col-3">
       <div class="post-item">
@@ -103,4 +118,5 @@ export {
   createRestaurantsDetailTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
+  createLoadingTemplate,
 };
